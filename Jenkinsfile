@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/teshchaudhary/jenkins-sandbox'
+                git branch: 'main', url: 'https://github.com/teshchaudhary/jenkins-sandbox.git'
             }
         }
 
